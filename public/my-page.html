@@ -1,64 +1,65 @@
-<style>
+
+
+<html>
+  <head>
+    <title>My ERB Page!</title>
+    <link rel="stylesheet" href="style.css">
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Yay Layouts</h1>
+        <ul class="nav">
+          <li>NAVIGATION</li>
+          <li>|</li>
+          
+            <li><a href='http://google.com'>google</a></li>
+          
+            <li><a href='http://railscasts.com/'>railscasts</a></li>
+          
+        </ul>
+      </header>
+      <div class="content">
+        <div class="left">
+	<h1>This is my page!</h1>
+	<h2>Isn't it SOOO cool?!?!</h2>
+
 	
-	@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
-	body { 
-		background: #efefef; 
-		font-size: 100%; 
-		font-family: 'PT Sans Narrow', sans-serif; 
-	}
-	.content { width: 600px; padding: 20px 50px; margin: 0px auto; background: #fff; margin-top: 50px; }
-	.content h1 { font-size: 2em; } 
-	.content h2 { font-size: 1.6em; }
-	.content h3 { font-size: 1.4em; }
-	.content p.info { font-size: 1em; text-transform: capitalize; }
-	p.info span { font-style: italic; font-weight: 700; }
 
-</style>
-<!doctype html>
-<html>
-<head>
-	<title>This is an ERB page!</title>
-</head>
-<body>
-	<div class="wrapper">
+	<h3>Here is some information about me!</h3>
+	
+		<p class="info"><span>name:</span> Nathaniel Watts</p>
+	
+		<p class="info"><span>age:</span> 26</p>
+	
+		<p class="info"><span>location:</span> The Deep South</p>
+	
+		<p class="info"><span>occupation:</span> Aspiring Rails Developer</p>
+	
+		<p class="info"><span>sanity:</span> Questionable</p>
+	
+</div><!-- //left -->
+<div class="right">
+	<h3>Here is a list of my favorite things:</h3>
+	<ul class="favs">
+		
+		<li>Cheese</li>
+		
+		<li>Cycling</li>
+		
+		<li>Long Walks on the Beach</li>
+		
+		<li>Sleeping</li>
+		
+	</ul>
+</div><!-- //right -->
 
-		<div class="content">
+<h3 class="bye">That's it for now... KKTHX</h3>
 
-			<h1>This is my page!</h1>
-			<h2>Isn't it SOOO cool?!?!</h2>
-
-			
-
-			<h3>Here is some information about me!</h3>
-			
-				<p class="info"><span>name:</span> Nathaniel Watts</p>
-			
-				<p class="info"><span>age:</span> 26</p>
-			
-				<p class="info"><span>location:</span> The Deep South</p>
-			
-				<p class="info"><span>occupation:</span> Aspiring Rails Developer</p>
-			
-				<p class="info"><span>sanity:</span> Questionable</p>
-			
-
-			<h3>Here is a list of my favorite things:</h3>
-			<ul class="favs">
-				
-				<li>Cheese</li>
-				
-				<li>Cycling</li>
-				
-				<li>Long Walks on the Beach</li>
-				
-				<li>Sleeping</li>
-				
-			</ul>
-
-			<h3>That's it for now... KKTHX</h3>
-
-		</div><!-- //content -->
-	</div><!-- //wrapper -->
-</body>
-<html>
-
+      </div><!-- //content -->
+      <footer>
+        <h3> &lt;3 RUBY </h3>
+        <p>&copy; 2012 watts</p>
+      </footer>
+    </div><!-- //wrapper -->
+  </body>
+</html>

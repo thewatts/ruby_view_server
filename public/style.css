@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
+body { 
+	background: #efefef; 
+	font-size: 100%; 
+	font-family: 'PT Sans', sans-serif; 
+}
+header { width: 740px; background: #222; padding: 5px 30px; overflow: hidden; margin-bottom: 10px; }
+header h1 { color: #fff; text-transform: uppercase; float: left; }
+header .nav { float: right; margin-top: 30px }
+header .nav li { float: left; margin-left: 15px; color: #fff; font-weight: bold; }
+header .nav a { color: orange; font-weight: bold; font-size: 1em; text-transform: uppercase; text-decoration: none; display: block;}
+header .nav a:hover { text-decoration: underline; }
+.wrapper { width: 800px; margin: 0px auto; margin-top: 50px; }
+.content { width: 760px; padding: 20px; background: #fff; overflow: hidden; }
+.content h1 { font-size: 2em; } 
+.content h2 { font-size: 1.6em; }
+.content h3 { font-size: 1.4em; }
+.content p.info { font-size: 1em; text-transform: capitalize; }
+p.info span { font-style: italic; font-weight: 700; }
+div.left { float: left; width: 63%; padding: 0 10px;}
+div.right { float: right; width: 30%; margin-right: 20px; }
+h3.bye { clear: both; }
+footer { overflow: hidden; }
+footer h3 { float: left; margin-left: 20px;}
+footer p { float: right; margin-right: 20px; }

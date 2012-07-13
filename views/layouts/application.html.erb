@@ -1,20 +1,37 @@
-<html>
-  <body>
-    <h1>You're using a layout</h1>
-    <p>
-      <h3> I'm a header</h3>
-      <p>Put things in the header</p>
-      <a href='me.html'>Me</a>
+<% # function to declare links!
+  def link_to(name, url)
+    return "<a href='#{url}'>#{name}</a>"
+  end
 
-    </p>
-    <hr />
-    <div>
-      <%= yield %>
-    </div>
-    <hr />
-    <div>
-      <h3> I'm a footer</h3>
-      <p>Put things in the footer</p>
-    </div>
+  nav_links = { 
+    google: "http://google.com", 
+    railscasts: "http://railscasts.com/"
+  }
+%>
+
+<html>
+  <head>
+    <title>My ERB Page!</title>
+    <link rel="stylesheet" href="style.css">
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Yay Layouts</h1>
+        <ul class="nav">
+          <li>NAVIGATION</li>
+          <li>|</li>
+          <% nav_links.each do |name, url| %>
+            <li><%= link_to(name,url) %></li>
+          <% end %>
+        </ul>
+      </header>
+      <div class="content">
+        <%= yield %>
+      </div><!-- //content -->
+      <footer>
+        <h3> &lt;3 RUBY </h3>
+        <p>&copy; 2012 watts</p>
+      </footer>
+    </div><!-- //wrapper -->
   </body>
 </html>
